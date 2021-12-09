@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-12-2021 a las 16:18:49
+-- Tiempo de generación: 09-12-2021 a las 13:41:12
 -- Versión del servidor: 10.4.21-MariaDB
 -- Versión de PHP: 7.3.31
 
@@ -125,11 +125,16 @@ CREATE TABLE `nuevos` (
 --
 
 INSERT INTO `nuevos` (`Id`, `Nombre`, `Precio`) VALUES
-(1, 'APPLE IPAD DE 10.2\" 32GB PLATA(8a GENERACION)', '67834'),
+(1, 'APPLE IPAD DE 10.2\" 8VA GENERACION 32GB PLATA', '67834'),
 (2, 'APLLE IPAD (9a GENERACION) 10.2\" 64GB', '76000'),
-(3, '', ''),
-(4, '', ''),
-(5, '', '');
+(3, 'SMART BALANCE HOVERBOARD ROJO', '29990'),
+(4, 'JEEP ARENERO AUTO A BATERIA 12V CONTROL REMOTO', '64599'),
+(5, 'CUATRICICLO BATERIA 6V LUCES RUEDAS GOMAS', '25000'),
+(6, 'PILETA PELOPINCHO 1043 2800 LITROS', '19999'),
+(7, 'TERMO STANLEY 1.4 LITROS ROJO ORIGINAL', '17500'),
+(8, 'ROUTER XIAOMI MI ALOT AC2350 ROMPEMUROS', '8050'),
+(9, 'TECLADO GAMER REDRAGON KUMARA QWERTY', '4560'),
+(10, 'TRICICLO FROZEN CON MANIJAS DIRECCIONAL', '12900');
 
 -- --------------------------------------------------------
 
@@ -202,7 +207,17 @@ INSERT INTO `productos` (`Id`, `Nombre`, `Precio`, `Descripcion`, `Especificacio
 (66, 'CARGADOR CELULAR INALAMBRICO C', 1250, '', '', ''),
 (67, 'CARGADOR POWER BANK 10000', 1150, '', '', ''),
 (68, 'CARGADOR 2 USV 12 V AUTO', 154, '', '', ''),
-(69, 'HOLDER MANITO CELULAR', 180, '', '', '');
+(69, 'HOLDER MANITO CELULAR', 180, '', '', ''),
+(70, 'APPLE IPAD DE 10.2\" 8VA GENERA', 67834, '', '', ''),
+(71, 'APPLE IPAD (9a GENERACION) 10.', 76000, '', '', ''),
+(72, 'SMART BALANCE HOVERBOARD', 29990, '', '', ''),
+(73, 'JEEP ARENERO AUTO A BATERIA', 64599, '', '', ''),
+(74, 'CUATRICICLO BATERIA 6V LUCES R', 25000, '', '', ''),
+(75, 'PILETA PELOPINCHO 1043 2800 LI', 19999, '', '', ''),
+(76, 'TERMO STANLEY 1.4 LITROS ROJO ', 17500, '', '', ''),
+(77, 'ROUTER XIAOMI MI ALOT AC2350 R', 8050, '', '', ''),
+(78, 'TECLADO GAMER REDRAGON', 4560, '', '', ''),
+(79, 'TRICICLO FROZEN CON MANIJAS DI', 12900, '', '', '');
 
 -- --------------------------------------------------------
 
@@ -222,8 +237,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`Id`, `Usuario`, `Contraseña`, `Email`) VALUES
-(5, 'JoelChiaraviglio', '$2y$10$Zczx5B6tSZ5zpQf3Q96xCeIWVXGBd.sfPLThUazH56azFCkQBIMT2', 'chiaravigliobrianjoel@gmail.com'),
-(6, 'prueba', '$2y$10$LT9oaYT4kUf.BeYUYLNumeuzWW8fszstoMPfIt4s1h6Cg.gD.okPa', 'prueba@gmail.com');
+(9, 'prueba2', '$2y$10$2CZrkLfAds77XGzpVKfy6O33VxMI48jY/z5deMHsu094u0ql37cJW', 'prueba2@gmail.com');
 
 --
 -- Índices para tablas volcadas
@@ -303,19 +317,19 @@ ALTER TABLE `notebooks`
 -- AUTO_INCREMENT de la tabla `nuevos`
 --
 ALTER TABLE `nuevos`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de la tabla `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
+  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=80;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
